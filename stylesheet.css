@@ -1,0 +1,682 @@
+/*-----------------------------------------------------------------*/
+
+@font-face {
+	font-family: Lato-Reg;
+	src: url(Font/Lato-Regular.ttf);
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: Lato-Bold;
+	src: url(Font/Lato-Bold.ttf);
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: Lato-Black;
+	src: url(Font/Lato-Black.ttf);
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: Lato-BoldItalic;
+	src: url(Font/Lato-BoldItalic.ttf);
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: Montserrat-Black;
+	src: url(Font/Montserrat-Black.otf);
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: BricolageGrotesque-Regular;
+	src: url(Font/BricolageGrotesque-Regular.ttf);
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: BricolageGrotesque-Light;
+	src: url(Font/BricolageGrotesque-Light.ttf);
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: BricolageGrotesque-ExtraLight;
+	src: url(Font/BricolageGrotesque-ExtraLight.ttf);
+	font-weight: normal;
+    font-style: normal;
+}
+
+/*-----------------------------------------------------------------*/
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f9f9f9;
+}
+
+body.hidden-scrolling {
+	overflow-y: hidden;
+}
+
+/*-----------------------------------------------------------------*/
+
+header {
+	width: 100%;
+	background-color: rgba(0,0,0,0);
+}
+
+header img {
+	width: 120px;
+}
+
+header .logo {
+	padding: 27px 20px 26px 45px;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background: black;
+	z-index: 1;
+	transition: all .5s ease;
+	opacity: .95;
+	display: none;
+	top: 0;
+}
+
+@keyframes show {
+	0% {
+		top: -100%;
+	}
+	100% {
+		top: 0%;
+	}
+}
+
+input {
+	-webkit-appearance: none;
+	visibility: hidden;
+	display: none;
+}
+
+#plus {
+	position: absolute;
+	right: 45px;
+	top: 25px;
+	font-size: 40px;
+	cursor: pointer;
+	font-weight: 40;
+}
+
+#plus:hover {
+	opacity: .5;
+	transition: .5s;
+}
+
+#min {
+	position: absolute;
+	right: 45px;
+	top: 25px;
+	font-size: 40px;
+	transform: rotate(45deg);
+	cursor: pointer;
+	color: #f9f9f9;
+	font-weight: 40;
+}
+
+#min:hover {
+	opacity: .5;
+	transition: .5s;
+}
+
+.menu {
+	width: 80%;
+	list-style: none;
+	margin-left: 10%;
+	margin-top: 16%;
+}
+
+.menu .li {
+	display: inline-block;
+	width: 27%;
+	margin-bottom: 5%;
+	transition: all 0.5s ease;
+}
+
+.menu .li a {
+	color: #f9f9f9;
+	font-size: 4vw;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	font-family: BricolageGrotesque-Light;
+	transition: all 0.5s ease;
+}
+
+.menu .li a:hover {
+	transform: scale(1.1);
+	transform-origin: 1% 1%;
+	backface-visibility: hidden;
+}
+
+#check:checked ~ .container {
+	display: block;
+	z-index: 999;
+}
+
+.menu .home, .menu .service, .submenu {
+	margin-left: 9%;
+}
+
+.menu .contact {
+	float: right;
+	margin-right: 9%;
+}
+
+.menu .service {
+	margin-bottom: 1%;
+}
+
+.submenu {
+	width: 82%;
+}
+
+.submenu li {
+	margin-bottom: 2%;
+	display: inline-block;
+	width: 19%;
+	transition: all 0.5s ease;
+}
+
+.submenu li a {
+	color: #f9f9f9;
+	font-size: 1.2vw;
+	font-family: BricolageGrotesque-ExtraLight;
+	text-decoration: underline 0.05em rgba(249, 249, 249, 0);
+	transition: text-decoration-color .9s;
+}
+
+.submenu li a:hover {
+	text-decoration: underline 0.05em rgba(249, 249, 249, 1);
+}
+
+.submenu .last {
+	margin-bottom: 0;
+}
+
+.submenu .iconcontact {
+	width: 3%;
+	float: right;
+}
+
+.submenu .ig {
+	margin-right: -3%;
+}
+
+.submenu .wa {
+	margin-right: -7%;
+}
+
+.submenu .iconcontact i {
+	font-size: 1.4vw;
+	color: #f9f9f9;
+}
+
+.submenu .iconcontact i:hover {
+	opacity: .5;
+	transition: .7s;
+}
+
+.logo .lg2 {
+	display: none;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+header.sticky {
+	background-color: #203830;
+	opacity: .9;
+	transition: .5s;
+}
+
+header.sticky > .logo .lg1 {
+	display: none;
+}
+
+header.sticky > .logo .lg2 {
+	display: block;
+}
+
+/*-----------------------------------------------------------------*/
+
+.parallax {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+}
+
+#text {
+	font-family: BricolageGrotesque-ExtraLight;
+	position: fixed;
+	font-size: 12vh;
+	width: 60%;
+	top: 35vh;
+	text-align: center;
+	color: black;
+}
+
+.arrow {
+	position: fixed;
+	top: 69vh;
+}
+
+.arrow span {
+	display: block;
+	border-bottom: 3px solid #a6a6a6;
+	border-right: 3px solid #a6a6a6;
+	transform: rotate(45deg);
+	animation: animate 1.3s infinite;
+}
+
+.arrow span:nth-child(1) {
+	animation-delay: .1s;
+}
+
+.arrow span:nth-child(2) {
+	animation-delay: .1s;
+}
+
+@keyframes animate {
+	0% {
+		transform: rotate(45deg) translate(-5px, -5px);
+	}
+
+	100% {
+		transform: rotate(45deg) translate(5px, 5px);
+	}
+}
+
+.arrow1 {
+	width: 30px;
+	height: 30px;
+	font-weight: 900;
+	margin-left: -16%;
+}
+
+.arrow2 {
+	width: 20px;
+	height: 20px;
+}
+
+/*-----------------------------------------------------------------*/
+
+.sec {
+	position: relative;
+	background: rgba(0,0,0,0);
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 6%;
+	padding-bottom: 6%;
+}
+
+.sec video {
+	width: 100%;
+}
+
+/*-----------------------------------------------------------------*/
+
+.content {
+	width: 100%;
+	background-color: #f9f9f9;
+	height: 28vw;
+	position: absolute;
+	padding-top: 4%;
+}
+
+.content img {
+	width: 8%;
+	margin-left: 10%;
+	margin-right: 5%;
+	padding-bottom: 2%;
+}
+
+.content .wdy {
+	font-family: Lato-Reg;
+	display: inline-block;
+	font-size: 2vw;
+	width: 22%;
+}
+
+.content .text-content {
+	font-family: Lato-Reg;
+	font-size: 1.6vw;
+	width: 38%;
+	text-align: justify;
+	float: right;
+	margin-right: 10%;
+}
+
+.scope {
+	font-family: Lato-Reg;
+	font-size: 1.5vw;
+	display: inline-block;
+	margin-left: 23%;
+	margin-top: 3%;
+	width: 37%;
+}
+
+.scope .scope-title {
+	margin-bottom: 2%;
+	display: block;
+	color: #a6a6a6;
+}
+
+.scope p {
+	display: inline-block;
+}
+
+.scope-gd, .scope-pv {
+	margin-right: 12%;
+	margin-bottom: 2%;
+}
+
+.scope-3d {
+	margin-right: 21.7%;
+}
+
+.scope-branding {
+	margin-right: 22.3%;
+}
+
+.location {
+	font-family: BricolageGrotesque-Regular;
+	font-size: 1.5vw;
+	float: right;
+	margin-right: 10%;
+	margin-top: 3%;
+}
+
+.location .location-title {
+	margin-bottom: 9%;
+	color: #a6a6a6;
+}
+
+/*-----------------------------------------------------------------*/
+
+.wwd {
+	position: absolute;
+	width: 100%;
+	height: 70vw;
+	margin-top: 28%;
+	background-color: #f9f9f9;
+	border: 1px solid blue;
+}
+
+.wwd .wwd-title {
+	font-family: BricolageGrotesque-Regular;
+	font-size: 5vw;
+	margin-left: 10%;
+	margin-top: 2%;
+	display: inline-block;
+}
+
+.wwd .wwd-text {
+	display: inline-block;
+	float: right;
+	font-family: BricolageGrotesque-Regular;
+	font-size: 1.5vw;
+	width: 26%;
+	text-align: right;
+	margin-top: 4%;
+	margin-right: 10%;
+	line-height: .9;
+}
+
+.wwd .wwd-content {
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 3%;
+}
+
+.wwd .card {
+	width: 32.3%;
+	display: inline-block;
+	overflow: hidden;
+	filter: grayscale(100%);
+	transition: .5s ease;
+}
+
+.wwd img {
+	width: 100%;
+}
+
+.wwd .rgt {
+	margin-right: 1%;
+}
+
+.wwd .wwd-content .btm {
+	margin-bottom: 1%;
+}
+
+.wwd .wwd-content .card p {
+	font-family: BricolageGrotesque-Regular;
+	position: absolute;
+	margin-top: -40%;
+	font-size: 3vw;
+	font-weight: bold;
+	width: 59%;
+	margin-left: 10%;
+	color: #f9f9f9;
+	visibility: hidden;
+	transition: .1s;
+}
+
+.wwd .wwd-content .card .oneline {
+	margin-top: -25%;
+}
+
+.wwd .card:hover {
+	cursor: pointer;
+	transform: scale(1.02);
+	filter: grayscale(0%);
+}
+
+.wwd .wwd-content .card:hover p {
+	visibility: visible;
+}
+
+/*-----------------------------------------------------------------*/
+
+.sw {
+	position: absolute;
+	margin-top: 98%;
+	border: 1px solid red;
+	width: 100%;
+	font-family: BricolageGrotesque-Regular;
+}
+
+.sw .sw-text {
+	display: inline-block;
+	margin-left: 10%;
+	font-size: 1.8vw;
+	width: 40%;
+	border: 1px solid green;
+	margin-top: 7%;
+}
+
+.sw .sw-title {
+	float: right;
+	text-align: right;
+	font-size: 5vw;
+	margin-right: 10%;
+	border: 1px solid red;
+	width: 23%;
+}
+
+/*-----------------------------------------------------------------*/
+
+@media (max-width: 600px) {
+	#text {
+		font-size: 5vh;
+		width: 80%;
+		top: 40%;
+	}
+
+	.arrow {
+		top: 60%;
+	}
+
+	.content {
+		height: 73vw;
+	}
+
+	.content img {
+		width: 14%;
+	}
+
+	.content .wdy {
+		display: block;
+		font-size: 4.5vw;
+		width: 49%;
+		margin-left: 10%;
+		margin-bottom: 2%;
+	}
+
+	.content .text-content {
+		font-size: 3.5vw;
+		width: 80%;
+		float: left;
+		margin-left: 10%;
+	}
+
+	.scope {
+		font-size: 3.3vw;
+		margin-left: 10%;
+		width: 60%;
+		margin-bottom: 7%;
+	}
+
+	.scope .scope-title {
+		margin-bottom: 2%;
+		display: block;
+		color: #a6a6a6;
+	}
+
+	.scope p {
+		display: inline-block;
+	}
+
+	.scope-gd, .scope-pv {
+		margin-right: 9%;
+		margin-bottom: 2%;
+	}
+
+	.scope-web {
+		margin-right: 27%;
+		margin-bottom: 2%;
+	}
+
+	.scope-3d {
+		margin-right: 21.7%;
+		margin-bottom: 2%;
+	}
+
+	.scope-branding {
+		margin-right: 25%;
+	}
+
+	.location {
+		font-size: 3.3vw;
+	}
+
+	.wwd {
+		height: 140vw;
+		margin-top: 72%;
+	}
+
+}
+
+@media (min-width:601px) and (max-width: 980px) {
+	#text {
+		font-size: 7vh;
+		width: 60%;
+		top: 40%;
+	}
+
+	.arrow {
+		top: 60%;
+	}
+
+	
+}
+
+@media (max-width: 980px) {
+	.sec {
+		background: #f9f9f9;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	.sec video {
+		width: 100%;
+	}
+}
+
+@media (max-width: 900px) {
+	.wwd {
+		height: 142vw;
+	}
+
+	.wwd .card {
+		width: 49%;
+	}
+
+	.wwd-content .rgt {
+		margin-right: 0;
+	}
+
+	.wwd-content .rgt2 {
+		margin-right: 1%;
+	}
+
+	.wwd-content .btm {
+		margin-bottom: 0;
+	}
+
+	.wwd-content .btm2 {
+		margin-bottom: 1%;
+	}
+
+	.wwd .wwd-content .card p {
+		font-size: 4.5vw;
+	}
+}
+
+@media (max-width: 496px) {
+	.wwd .card {
+		width: 48%;
+	}
+}
