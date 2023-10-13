@@ -4,33 +4,29 @@
 		<meta charset="utf-8">
 	    <title>UNEEDS - Home</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <link rel="stylesheet" href="stylesheet.css">
+	    <link rel="stylesheet" href="navbar.css">
 	    <script src="https://kit.fontawesome.com/407664f392.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
-		<header class="header" id="navbar">
+		<div class="container" id="navbar">
 			<div class="logo">
-				<a href="index.html" class="lg1"><img src="Assets/Logo-2.png"></a>
-				<a href="index.html" class="lg2"><img src="Assets/Logo-1.png"></a>
+				<img src="Assets/Logo-2.png">
 			</div>
-
-			<input type="checkbox" name="" id="check">
-			<label for="check">
-				<span class="fa-solid fa-plus" id="plus"></span>
-			</label>
-			<div class="container">
-				<input type="checkbox" name="" id="check">
-				<label for="check">
-					<span class="fa-solid fa-plus" id="min"></span>
-				</label>
-				<ol class="menu">
+			<div class="plus">
+				<span>+</span>
+			</div>
+			<div class="box">
+				<div class="min">
+					<span>+</span>
+				</div>
+				<nav class="menu">
 					<li class="li home"><a href="#">Home</a></li>
 					<li class="li"><a href="#">About Us</a></li>
 					<li class="li"><a href="#">Portofolio</a></li>
 					<li class="li service"><a href="#">Service</a></li>
 					<li class="li contact"><a href="#">Contact</a></li>
-					<ol class="submenu">
+					<ul class="submenu">
 						<li><a href="#">Graphic Design</a></li>
 						<li><a href="#">Photo & Video</a></li>
 						<li><a href="#">Website</a></li>
@@ -41,15 +37,15 @@
 						<li class="last"><a href="#">3D Design</a></li>
 						<li class="last"><a href="#">Branding</a></li>
 						<li class="last"><a href="#">Drone</a></li>
-					</ol>
-				</ol>
+					</ul>
+				</nav>
 			</div>
-		</header>
+		</div>
 
 		<section class="parallax">
-			<h2 id="text">
+			<p id="text">
 				Empowering Your Needs.
-			</h2>
+			</p>
 			<div class="arrow">
 				<span class="arrow1"></span>
 				<span class="arrow2"></span>
@@ -112,12 +108,10 @@
 			</div>
 		</section>
 
-		<!-- <section class="sw">
+		<section class="sw">
 			<p class="sw-text">Explore the highlights of our selected works, where creativity meets excellence.</p>
 			<p class="sw-title">Selected <b>Works</b></p>
-		</section> -->
-
+		</section>
 	</body>
-
-	<script src="script.js"></script>
+	<script src="navbar.js"></script>
 </html>
