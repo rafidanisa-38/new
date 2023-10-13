@@ -70,87 +70,122 @@ body {
 	background-color: #f9f9f9;
 }
 
-body.hidden-scrolling {
-	overflow-y: hidden;
-}
-
-/*-----------------------------------------------------------------*/
-
-header {
+.container {
 	width: 100%;
+	height: 6.8vw;
 	background-color: rgba(0,0,0,0);
 }
 
-header img {
-	width: 120px;
+.logo {
+	width: 9vw;
+	margin-left: 3%;
+	margin-top: 1.8%;
+	margin-bottom: 2%;
+	display: inline-block;
+	position: absolute;
 }
 
-header .logo {
-	padding: 27px 20px 26px 45px;
-}
-
-.container {
-	height: 100%;
+.logo img {
 	width: 100%;
-	position: fixed;
-	background: black;
+}
+
+.box {
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	position: relative;
+	text-align: left;
+	opacity: 0;
 	z-index: 1;
-	transition: all .5s ease;
+	top: -500px;
+	pointer-events: none;
+	transition: all .5s ease-in;
+
+}
+
+.active.box {
 	opacity: .95;
-	display: none;
 	top: 0;
-}
-
-@keyframes show {
-	0% {
-		top: -100%;
-	}
-	100% {
-		top: 0%;
-	}
-}
-
-input {
-	-webkit-appearance: none;
-	visibility: hidden;
-	display: none;
-}
-
-#plus {
+	pointer-events: fill;
 	position: absolute;
-	right: 45px;
-	top: 25px;
-	font-size: 40px;
+}
+
+/*.plus, .box .min {
+	width: 3vw;
+	height: 2.9vw;
+	float: right;
+	margin-top: 1.8%;
+	margin-right: 3.5%;
 	cursor: pointer;
-	font-weight: 40;
+	border: 1px solid red;
 }
 
-#plus:hover {
-	opacity: .5;
-	transition: .5s;
-}
-
-#min {
-	position: absolute;
-	right: 45px;
-	top: 25px;
-	font-size: 40px;
-	transform: rotate(45deg);
+.plus .line, .box .min .line {
+	width: 2.7vw;
+	height: .19vw;
+	position: fixed;
+	transform: translate(-50%, -50%);
 	cursor: pointer;
-	color: #f9f9f9;
-	font-weight: 40;
 }
 
-#min:hover {
-	opacity: .5;
-	transition: .5s;
+.plus .line {
+	background-color: black;
+	left: 95%;
+	top: 6%;
+}
+
+.box .min .line {
+	background-color: #f9f9f9;
+	transform: rotate(134deg);
+	left: 93.7%;
+	top: 5.9%;
+	cursor: pointer;
+}
+
+.plus .line:nth-child(2) {
+	transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.box .min .line:nth-child(2) {
+	transform: translate(-50%, -50%) rotate(45deg);
+	left: 95%;
+	top: 6%;
+}
+
+.plus:hover, .box .min:hover {
+	opacity: .7;
+	transition: .4s;
+}*/
+
+.plus, .min {
+	display: block;
+	width: 2.4vw;
+	height: 2.4vw;
+	float: right;
+	margin-top: 1%;
+	margin-right: 3.5%;
+	cursor: pointer;
+	border: 1px solid red;
+	font-size: 4vw;
+}
+
+.plus span {
+	margin-top: -100px;
+	border: 1px solid red;
+}
+
+.min {
+	color: white;
 }
 
 .menu {
 	width: 80%;
 	list-style: none;
-	margin-left: 10%;
-	margin-top: 16%;
+	margin: 0;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	position: absolute;
 }
 
 .menu .li {
@@ -244,10 +279,6 @@ input {
 	transition: .7s;
 }
 
-.logo .lg2 {
-	display: none;
-}
-
 .sticky {
 	position: fixed;
 	top: 0;
@@ -255,19 +286,12 @@ input {
 	z-index: 1000;
 }
 
-header.sticky {
-	background-color: #203830;
-	opacity: .9;
+.container.sticky {
+	background-color: #f9f9f9;
+	opacity: .95;
 	transition: .5s;
 }
 
-header.sticky > .logo .lg1 {
-	display: none;
-}
-
-header.sticky > .logo .lg2 {
-	display: block;
-}
 
 /*-----------------------------------------------------------------*/
 
@@ -279,7 +303,7 @@ header.sticky > .logo .lg2 {
 }
 
 #text {
-	font-family: BricolageGrotesque-ExtraLight;
+	font-family: BricolageGrotesque-Light;
 	position: fixed;
 	font-size: 12vh;
 	width: 60%;
@@ -432,14 +456,13 @@ header.sticky > .logo .lg2 {
 	height: 70vw;
 	margin-top: 28%;
 	background-color: #f9f9f9;
-	border: 1px solid blue;
 }
 
 .wwd .wwd-title {
 	font-family: BricolageGrotesque-Regular;
-	font-size: 5vw;
+	font-size: 6vw;
 	margin-left: 10%;
-	margin-top: 2%;
+	margin-top: 4%;
 	display: inline-block;
 }
 
@@ -447,10 +470,10 @@ header.sticky > .logo .lg2 {
 	display: inline-block;
 	float: right;
 	font-family: BricolageGrotesque-Regular;
-	font-size: 1.5vw;
-	width: 26%;
+	font-size: 2vw;
+	width: 35%;
 	text-align: right;
-	margin-top: 4%;
+	margin-top: 6%;
 	margin-right: 10%;
 	line-height: .9;
 }
@@ -617,6 +640,9 @@ header.sticky > .logo .lg2 {
 		margin-top: 72%;
 	}
 
+	.sw {
+		margin-top: 214%;
+	}
 }
 
 @media (min-width:601px) and (max-width: 980px) {
@@ -672,6 +698,16 @@ header.sticky > .logo .lg2 {
 
 	.wwd .wwd-content .card p {
 		font-size: 4.5vw;
+	}
+
+	.wwd .wwd-title {
+		font-size: 7vw;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+	.sw {
+		margin-top: 170%;
 	}
 }
 
