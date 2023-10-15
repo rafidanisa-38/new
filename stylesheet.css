@@ -1,6 +1,13 @@
 /*-----------------------------------------------------------------*/
 
 @font-face {
+	font-family: Lato-Light;
+	src: url(Font/Lato-Light.ttf);
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
 	font-family: Lato-Reg;
 	src: url(Font/Lato-Regular.ttf);
 	font-weight: normal;
@@ -72,14 +79,14 @@ body {
 
 .container {
 	width: 100%;
-	height: 6.8vw;
+	height: 8vw;
 	background-color: rgba(0,0,0,0);
 }
 
 .logo {
-	width: 9vw;
-	margin-left: 3%;
-	margin-top: 1.8%;
+	width: 10vw;
+	margin-left: 4%;
+	margin-top: 2.5%;
 	margin-bottom: 2%;
 	display: inline-block;
 	position: absolute;
@@ -110,72 +117,33 @@ body {
 	position: absolute;
 }
 
-/*.plus, .box .min {
-	width: 3vw;
-	height: 2.9vw;
-	float: right;
-	margin-top: 1.8%;
-	margin-right: 3.5%;
-	cursor: pointer;
-	border: 1px solid red;
-}
-
-.plus .line, .box .min .line {
-	width: 2.7vw;
-	height: .19vw;
-	position: fixed;
-	transform: translate(-50%, -50%);
+.plus i {
+	position: absolute;
+	right: 4%;
+	margin-top: 1.5%;
+	font-size: 5vw;
 	cursor: pointer;
 }
 
-.plus .line {
-	background-color: black;
-	left: 95%;
-	top: 6%;
+.plus:hover {
+	opacity: .5;
+	transition: .5s;
 }
 
-.box .min .line {
-	background-color: #f9f9f9;
-	transform: rotate(134deg);
-	left: 93.7%;
-	top: 5.9%;
+.box .min {
+	position: absolute;
+	right: 4%;
+	margin-top: 1.5%;
+	font-size: 5vw;
+	transform: rotate(45deg);
 	cursor: pointer;
+	color: #f9f9f9;
+	font-weight: 40;
 }
 
-.plus .line:nth-child(2) {
-	transform: translate(-50%, -50%) rotate(90deg);
-}
-
-.box .min .line:nth-child(2) {
-	transform: translate(-50%, -50%) rotate(45deg);
-	left: 95%;
-	top: 6%;
-}
-
-.plus:hover, .box .min:hover {
-	opacity: .7;
-	transition: .4s;
-}*/
-
-.plus, .min {
-	display: block;
-	width: 2.4vw;
-	height: 2.4vw;
-	float: right;
-	margin-top: 1%;
-	margin-right: 3.5%;
-	cursor: pointer;
-	border: 1px solid red;
-	font-size: 4vw;
-}
-
-.plus span {
-	margin-top: -100px;
-	border: 1px solid red;
-}
-
-.min {
-	color: white;
+.box .min:hover {
+	opacity: .5;
+	transition: .5s;
 }
 
 .menu {
@@ -305,54 +273,13 @@ body {
 #text {
 	font-family: BricolageGrotesque-Light;
 	position: fixed;
-	font-size: 12vh;
+	font-size: 7vw;
 	width: 60%;
-	top: 35vh;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
 	text-align: center;
 	color: black;
-}
-
-.arrow {
-	position: fixed;
-	top: 69vh;
-}
-
-.arrow span {
-	display: block;
-	border-bottom: 3px solid #a6a6a6;
-	border-right: 3px solid #a6a6a6;
-	transform: rotate(45deg);
-	animation: animate 1.3s infinite;
-}
-
-.arrow span:nth-child(1) {
-	animation-delay: .1s;
-}
-
-.arrow span:nth-child(2) {
-	animation-delay: .1s;
-}
-
-@keyframes animate {
-	0% {
-		transform: rotate(45deg) translate(-5px, -5px);
-	}
-
-	100% {
-		transform: rotate(45deg) translate(5px, 5px);
-	}
-}
-
-.arrow1 {
-	width: 30px;
-	height: 30px;
-	font-weight: 900;
-	margin-left: -16%;
-}
-
-.arrow2 {
-	width: 20px;
-	height: 20px;
 }
 
 /*-----------------------------------------------------------------*/
@@ -360,13 +287,13 @@ body {
 .sec {
 	position: relative;
 	background: rgba(0,0,0,0);
-	padding-left: 15%;
-	padding-right: 15%;
-	padding-top: 6%;
-	padding-bottom: 6%;
+	padding-left: 14%;
+	padding-right: 14%;
+	padding-top: 7%;
+	padding-bottom: 7%;
 }
 
-.sec video {
+.sec video, .sec img {
 	width: 100%;
 }
 
@@ -375,39 +302,39 @@ body {
 .content {
 	width: 100%;
 	background-color: #f9f9f9;
-	height: 28vw;
+	height: 24vw;
 	position: absolute;
 	padding-top: 4%;
 }
 
 .content img {
 	width: 8%;
-	margin-left: 10%;
-	margin-right: 5%;
+	margin-left: 14%;
+	margin-right: 4%;
 	padding-bottom: 2%;
 }
 
 .content .wdy {
-	font-family: Lato-Reg;
+	font-family: Lato-Light;
 	display: inline-block;
-	font-size: 2vw;
+	font-size: 2.1vw;
 	width: 22%;
 }
 
 .content .text-content {
 	font-family: Lato-Reg;
-	font-size: 1.6vw;
-	width: 38%;
+	font-size: 1.1vw;
+	width: 31.5%;
 	text-align: justify;
 	float: right;
-	margin-right: 10%;
+	margin-right: 14%;
 }
 
 .scope {
 	font-family: Lato-Reg;
-	font-size: 1.5vw;
+	font-size: 1.3vw;
 	display: inline-block;
-	margin-left: 23%;
+	margin-left: 26.3%;
 	margin-top: 3%;
 	width: 37%;
 }
@@ -423,23 +350,23 @@ body {
 }
 
 .scope-gd, .scope-pv {
-	margin-right: 12%;
+	margin-right: 19%;
 	margin-bottom: 2%;
 }
 
 .scope-3d {
-	margin-right: 21.7%;
+	margin-right: 26.1%;
 }
 
 .scope-branding {
-	margin-right: 22.3%;
+	margin-right: 28%;
 }
 
 .location {
-	font-family: BricolageGrotesque-Regular;
-	font-size: 1.5vw;
+	font-family: Lato-Reg;
+	font-size: 1.3vw;
 	float: right;
-	margin-right: 10%;
+	margin-right: 14%;
 	margin-top: 3%;
 }
 
@@ -454,13 +381,13 @@ body {
 	position: absolute;
 	width: 100%;
 	height: 70vw;
-	margin-top: 28%;
+	margin-top: 24%;
 	background-color: #f9f9f9;
 }
 
 .wwd .wwd-title {
 	font-family: BricolageGrotesque-Regular;
-	font-size: 6vw;
+	font-size: 7vw;
 	margin-left: 10%;
 	margin-top: 4%;
 	display: inline-block;
@@ -470,10 +397,10 @@ body {
 	display: inline-block;
 	float: right;
 	font-family: BricolageGrotesque-Regular;
-	font-size: 2vw;
-	width: 35%;
+	font-size: 1.5vw;
+	width: 22%;
 	text-align: right;
-	margin-top: 6%;
+	margin-top: 8%;
 	margin-right: 10%;
 	line-height: .9;
 }
@@ -562,16 +489,6 @@ body {
 /*-----------------------------------------------------------------*/
 
 @media (max-width: 600px) {
-	#text {
-		font-size: 5vh;
-		width: 80%;
-		top: 40%;
-	}
-
-	.arrow {
-		top: 60%;
-	}
-
 	.content {
 		height: 73vw;
 	}
@@ -645,20 +562,6 @@ body {
 	}
 }
 
-@media (min-width:601px) and (max-width: 980px) {
-	#text {
-		font-size: 7vh;
-		width: 60%;
-		top: 40%;
-	}
-
-	.arrow {
-		top: 60%;
-	}
-
-	
-}
-
 @media (max-width: 980px) {
 	.sec {
 		background: #f9f9f9;
@@ -673,7 +576,7 @@ body {
 
 @media (max-width: 900px) {
 	.wwd {
-		height: 142vw;
+		height: 146vw;
 	}
 
 	.wwd .card {
@@ -701,18 +604,198 @@ body {
 	}
 
 	.wwd .wwd-title {
-		font-size: 7vw;
+		font-size: 8vw;
 	}
-}
 
-@media (min-width: 601px) and (max-width: 900px) {
+	.wwd .wwd-text {
+		font-size: 2vw;
+		width: 25%;
+	}
+
+
 	.sw {
 		margin-top: 170%;
 	}
 }
 
+@media (min-width: 601px) and (max-width: 900px) {
+	
+}
+
 @media (max-width: 496px) {
 	.wwd .card {
 		width: 48%;
+	}
+}
+
+@media (max-width: 770px) {
+	.container {
+		height: 19vw;
+	}
+
+	.logo {
+		width: 27vw;
+		margin-left: 6%;
+		margin-top: 5%;
+	}
+
+	.plus i, .box .min {
+		right: 6%;
+		margin-top: .5%;
+		font-size: 18vw;
+	}
+
+
+
+	.menu {
+		width: 100%;
+	}
+
+	.menu .li {
+		display: block;
+		width: 39%;
+		margin-bottom: 5%;
+		margin-left: 15%;
+	}
+
+	.menu .li a {
+		font-size: 8vw;
+		display: block;
+	}
+
+	.menu .contact {
+		float: left;
+		margin-top: 43%;
+		margin-bottom: 7%;
+	}
+
+	.menu .service {
+		margin-bottom: 1%;
+	}
+
+	.submenu {
+		position: absolute;
+		margin-left: 15%;
+	}
+
+	.submenu li, .submenu .last {
+		margin-bottom: 2%;
+		display: block;
+		width: 43%;
+	}
+
+	.submenu li a {
+		font-size: 4vw;
+	}
+
+	.last {
+		position: absolute;
+	}
+
+	.bd {
+		margin-top: 8%;
+	}
+
+	.dr {
+		margin-top: 16%;
+	}
+
+	.submenu .iconcontact {
+		float: left;
+		margin-top: 42%;
+		margin-right: 0;
+		display: block;
+	}
+
+	.submenu .ig {
+		margin-right: 5%;
+	}
+
+	.submenu .iconcontact i {
+		font-size: 4.5vw;
+	}
+
+	#text {
+		font-size: 14vw;
+		width: 80%;
+		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+
+
+
+	.content {
+		height: 79vw;
+	}
+
+	.content img {
+		width: 17%;
+		margin-left: 10%;
+		margin-bottom: 2%;
+	}
+
+	.content .wdy {
+		display: block;
+		font-size: 5vw;
+		width: 55%;
+		margin-left: 10%;
+		margin-bottom: 3%;
+	}
+
+	.content .text-content {
+		font-size: 3.5vw;
+		width: 80%;
+		float: left;
+		margin-left: 10%;
+		margin-bottom: 2%;
+	}
+
+	.scope {
+		font-size: 3.4vw;
+		margin-left: 10%;
+		width: 60%;
+		margin-bottom: 7%;
+	}
+
+	.scope .scope-title {
+		margin-bottom: 2%;
+		display: block;
+		color: #a6a6a6;
+	}
+
+	.scope p {
+		display: inline-block;
+	}
+
+	.scope-gd, .scope-pv {
+		margin-right: 9%;
+		margin-bottom: 2%;
+	}
+
+	.scope-web {
+		margin-right: 31%;
+		margin-bottom: 2%;
+	}
+
+	.scope-3d {
+		margin-right: 21.7%;
+		margin-bottom: 2%;
+	}
+
+	.scope-branding {
+		margin-right: 25%;
+	}
+
+	.location {
+		font-size: 3.4vw;
+	}
+
+	.wwd {
+		margin-top: 79%;
+	}
+
+	.sw {
+		margin-top: 225%;
 	}
 }
