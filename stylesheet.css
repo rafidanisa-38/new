@@ -255,7 +255,7 @@ body {
 }
 
 .container.sticky {
-	background-color: #f9f9f9;
+	background-color: rgba(0,0,0,0);
 	opacity: .95;
 	transition: .5s;
 }
@@ -522,6 +522,7 @@ body {
 	cursor: pointer;
 	overflow: hidden;
 	transition: .2s ease-out;
+	filter: grayscale(100%);
 }
 
 .sw .sw-content-1 {	
@@ -544,6 +545,7 @@ body {
 	cursor: pointer;
 	overflow: hidden;
 	transition: .2s ease-out;
+	filter: grayscale(100%);
 }
 
 .sw .sw-content-4 {
@@ -575,7 +577,8 @@ body {
 .sw .sw-content-7:hover {
 	transform: scale(1.02);
 	z-index: 3;
-	box-shadow: 2px 2px 4px #000000;
+	box-shadow: 1px 1px 3px #000000;
+	filter: grayscale(0);
 }
 
 .sw .sw-decoration-2 {
