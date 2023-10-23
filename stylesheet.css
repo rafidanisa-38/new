@@ -287,13 +287,13 @@ body {
 .sec {
 	position: relative;
 	background: rgba(0,0,0,0);
-	padding-left: 14%;
-	padding-right: 14%;
+	padding-left: 12%;
+	padding-right: 12%;
 	padding-top: 7%;
 	padding-bottom: 7%;
 }
 
-.sec video, .sec img {
+.sec video {
 	width: 100%;
 }
 
@@ -309,8 +309,8 @@ body {
 
 .content img {
 	width: 8%;
-	margin-left: 14%;
-	margin-right: 4%;
+	margin-left: 12%;
+	margin-right: 6%;
 	padding-bottom: 2%;
 }
 
@@ -327,7 +327,7 @@ body {
 	width: 31.5%;
 	text-align: justify;
 	float: right;
-	margin-right: 14%;
+	margin-right: 12%;
 }
 
 .scope {
@@ -349,7 +349,12 @@ body {
 	display: inline-block;
 }
 
-.scope-gd, .scope-pv {
+.scope-gd {
+	margin-right: 18.9%;
+	margin-bottom: 2%;
+}
+
+.scope-pv {
 	margin-right: 19%;
 	margin-bottom: 2%;
 }
@@ -366,7 +371,7 @@ body {
 	font-family: Lato-Reg;
 	font-size: 1.3vw;
 	float: right;
-	margin-right: 14%;
+	margin-right: 12%;
 	margin-top: 3%;
 }
 
@@ -383,12 +388,13 @@ body {
 	height: 74vw;
 	margin-top: 24%;
 	background-color: #f9f9f9;
+	border: 1px solid green;
 }
 
 .wwd .wwd-title {
 	font-family: BricolageGrotesque-Regular;
 	font-size: 7vw;
-	margin-left: 10%;
+	margin-left: 12%;
 	margin-top: 4%;
 	display: inline-block;
 }
@@ -401,18 +407,18 @@ body {
 	width: 22%;
 	text-align: right;
 	margin-top: 8%;
-	margin-right: 10%;
+	margin-right: 12%;
 	line-height: .9;
 }
 
 .wwd .wwd-content {
-	width: 80%;
-	margin-left: 10%;
-	margin-top: 5%;
+	width: 76%;
+	margin-left: 12%;
+	margin-top: 4.5%;
 }
 
 .wwd .card {
-	width: 32.3%;
+	width: 31%;
 	display: inline-block;
 	overflow: hidden;
 	filter: grayscale(100%);
@@ -424,18 +430,18 @@ body {
 }
 
 .wwd .rgt {
-	margin-right: 1%;
+	margin-right: 2.9%;
 }
 
 .wwd .wwd-content .btm {
-	margin-bottom: 1%;
+	margin-bottom: 2%;
 }
 
 .wwd .wwd-content .card p {
 	font-family: BricolageGrotesque-Regular;
 	position: absolute;
 	margin-top: -40%;
-	font-size: 3vw;
+	font-size: 2.5vw;
 	font-weight: bold;
 	width: 59%;
 	margin-left: 10%;
@@ -462,27 +468,28 @@ body {
 
 .sw {
 	position: absolute;
-	margin-top: 98.5%;
+	margin-top: 98%;
 	width: 100%;
 	font-family: BricolageGrotesque-Regular;
-	height: 150vw;
+	height: 98vw;
 	background-color: #f9f9f9;
+	border: 1px solid red;
 }
 
 .sw .sw-text {
-	margin-left: 14%;
+	margin-left: 14.5%;
 	font-size: 1.4vw;
 	width: 28%;
 	text-align: justify;
-	margin-top: -84%;
+	margin-top: -80.5%;
 }
 
 .sw .sw-title {
 	float: right;
 	text-align: right;
 	font-size: 5vw;
-	margin-right: 14.5%;
-	margin-top: -5%;
+	margin-right: 15%;
+	margin-top: -4.8%;
 }
 
 .sw .sw-frame {
@@ -494,8 +501,8 @@ body {
 	position: absolute;
 	z-index: 2;
 	width: 15%;
-	margin-left: 81.9%;
-	margin-top: -3%;
+	margin-left: 80.3%;
+	margin-top: -3.5%;
 	animation: bouncee 1.3s ease-in-out infinite;
 }
 
@@ -514,8 +521,8 @@ body {
 }
 
 .sw .sw-content-1, .sw .sw-content-2, .sw .sw-content-3 {
-	width: 26.3%;
-	margin-top: 3.8%;
+	width: 25.2%;
+	margin-top: 3.5%;
 	position: absolute;
 	z-index: 2;
 	border: 1px solid black;
@@ -526,19 +533,19 @@ body {
 }
 
 .sw .sw-content-1 {	
-	margin-left: 10.6%;
+	margin-left: 12.3%;
 }
 
 .sw .sw-content-2 {
-	margin-left: 36.85%;
+	margin-left: 37.4%;
 }
 
 .sw .sw-content-3 {
-	margin-left: 63.1%;
+	margin-left: 62.5%;
 }
 
 .sw .sw-content-4, .sw .sw-content-5, .sw .sw-content-6, .sw .sw-content-7 {
-	width: 39.4%;
+	width: 37.8%;
 	position: absolute;
 	z-index: 2;
 	border: 1px solid black;
@@ -549,27 +556,25 @@ body {
 }
 
 .sw .sw-content-4 {
-	margin-left: 10.6%;
-	margin-top: 30.1%;
-	height: 12.9%;
+	margin-left: 12.3%;
+	margin-top: 28.7%;
+	height: 18.9%;
 }
 
 .sw .sw-content-5 {
 	margin-left: 50%;
-	margin-top: 30.1%;
-	height: 12.9%;
+	margin-top: 28.7%;
+	height: 18.9%;
 }
 
 .sw .sw-content-6 {
-	margin-left: 10.6%;
-	margin-top: 49.7%;
-	height: 15.4%;
+	margin-left: 12.3%;
+	margin-top: 47.4%;
 }
 
 .sw .sw-content-7 {
 	margin-left: 50%;
-	margin-top: 49.7%;
-	height: 15.4%;
+	margin-top: 47.4%;
 }
 
 .sw .sw-content-1:hover, .sw .sw-content-2:hover, .sw .sw-content-3:hover,
@@ -585,8 +590,8 @@ body {
 	position: absolute;
 	z-index: 2;
 	width: 15%;
-	margin-left: 3.1%;
-	margin-top: 75%;
+	margin-left: 4.7%;
+	margin-top: 77%;
 	animation: bounce 1.3s ease-in-out infinite;
 }
 
@@ -602,6 +607,17 @@ body {
 	100% {
 		top: 9%;
 	}
+}
+
+/*-----------------------------------------------------------------*/
+
+.quote {
+	position: absolute;
+	margin-top: 197.6%;
+}
+
+.quote .quote-bg {
+	width: 100%;
 }
 
 /*-----------------------------------------------------------------*/
@@ -915,5 +931,11 @@ body {
 
 	.sw {
 		margin-top: 225%;
+	}
+}
+
+@media (max-width: 770px) {
+	.quote {
+		margin-top: 323%;
 	}
 }
