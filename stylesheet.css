@@ -388,7 +388,6 @@ body {
 	height: 74vw;
 	margin-top: 24%;
 	background-color: #f9f9f9;
-	border: 1px solid green;
 }
 
 .wwd .wwd-title {
@@ -412,6 +411,7 @@ body {
 }
 
 .wwd .wwd-content {
+	display: block;
 	width: 76%;
 	margin-left: 12%;
 	margin-top: 4.5%;
@@ -492,9 +492,17 @@ body {
 	margin-top: -4.8%;
 }
 
-.sw .sw-frame {
+.sw .sw-frame-1, .sw .sw-frame-2 {
 	width: 100%;
 	position: relative;
+}
+
+.sw .sw-frame-1 {
+	display: block;
+}
+
+.sw .sw-frame-2 {
+	display: none;
 }
 
 .sw .sw-decoration-1 {
@@ -613,7 +621,7 @@ body {
 
 .quote {
 	position: absolute;
-	margin-top: 197.6%;
+	margin-top: 196.1%;
 }
 
 .quote .quote-bg {
@@ -714,7 +722,7 @@ body {
 	}
 
 	.wwd .card {
-		width: 49%;
+		width: 48.5%;
 	}
 
 	.wwd-content .rgt {
@@ -730,7 +738,7 @@ body {
 	}
 
 	.wwd-content .btm2 {
-		margin-bottom: 1%;
+		margin-bottom: 2%;
 	}
 
 	.wwd .wwd-content .card p {
@@ -749,6 +757,19 @@ body {
 
 	.sw {
 		margin-top: 170%;
+		height: 390vw;
+	}
+
+	.sw .sw-frame-1 {
+		display: none;
+	}
+
+	.sw .sw-frame-2 {
+		display: block;
+	}
+
+	.quote {
+		display: none;
 	}
 }
 
