@@ -43,6 +43,14 @@
 }
 
 @font-face {
+	font-family: Montserrat-Bold;
+	src: url(Font/Montserrat-Bold.ttf);
+	font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
 	font-family: BricolageGrotesque-Regular;
 	src: url(Font/BricolageGrotesque-Regular.ttf);
 	font-weight: normal;
@@ -59,6 +67,13 @@
 @font-face {
 	font-family: BricolageGrotesque-ExtraLight;
 	src: url(Font/BricolageGrotesque-ExtraLight.ttf);
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: BricolageGrotesque-Bold;
+	src: url(Font/BricolageGrotesque-Bold.ttf);
 	font-weight: normal;
     font-style: normal;
 }
@@ -411,7 +426,6 @@ body {
 }
 
 .wwd .wwd-content {
-	display: block;
 	width: 76%;
 	margin-left: 12%;
 	margin-top: 4.5%;
@@ -492,17 +506,9 @@ body {
 	margin-top: -4.8%;
 }
 
-.sw .sw-frame-1, .sw .sw-frame-2 {
+.sw .sw-frame {
 	width: 100%;
 	position: relative;
-}
-
-.sw .sw-frame-1 {
-	display: block;
-}
-
-.sw .sw-frame-2 {
-	display: none;
 }
 
 .sw .sw-decoration-1 {
@@ -627,6 +633,113 @@ body {
 .quote .quote-bg {
 	width: 100%;
 }
+
+.quote .quote-decoration-1 {
+	width: 16%;
+	margin-top: -32%;
+	display: block;
+	margin-left: 4%;
+}
+
+.quote .quote-decoration-2 {
+	width: 17%;
+	display: block;
+	margin-left: 50%;
+	margin-top: -13%;
+}
+
+.quote .quote-decoration-3 {
+	width: 15%;
+	display: block;
+	margin-left: 83%;
+	margin-top: -8%;
+}
+
+.quote .quote-title {
+	font-size: 3vw;
+	font-family: BricolageGrotesque-Light;
+	color: #f9f9f9;
+  	position: relative;
+  	margin-left: 10%;
+}
+
+.quote .quote-bold {
+	font-size: 5.5vw;
+	font-family: BricolageGrotesque-Bold;
+}
+
+.quote .quote-btn {
+	position: relative;
+	margin-left: 64%;
+	margin-top: -4.8%;
+	width: 25%;
+	cursor: pointer;
+}
+
+.quote .quote-btn-square {
+	width: 100%;
+	height: 150%;
+	border: 1px solid #f9f9f9;
+	border-radius: 4vw;
+	position: absolute;
+}
+
+.quote .quote-btn p {
+	padding-top: 5%;
+	margin-left: 15%;
+	font-family: Lato-Light;
+	color: #f9f9f9;
+	font-size: 1.8vw;
+}
+
+.containerr {
+    width: 70%;
+    position: absolute;
+    text-align: center;
+    top: 75%;
+  	left: 50%;
+  	transform: translate(-75%, -50%);
+}
+
+.quotes {
+    font-size: 3.5vw;
+    font-weight: bold;
+    color: #f9f9f9;
+    font-family: BricolageGrotesque-ExtraLight;
+
+}
+
+/*.author {
+    margin:10px;
+    text-align: right;
+    font-size: 25px;
+    font-family: BricolageGrotesque-Regular;
+}*/
+
+.containerr {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+#quoteTitle {
+	display: block;
+}
+
+#check:checked ~ .containerr {
+    display: block;
+}
+
+.checkbtn {
+    font-size: 120px;
+    color: white;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+
 
 /*-----------------------------------------------------------------*/
 
@@ -757,20 +870,16 @@ body {
 
 	.sw {
 		margin-top: 170%;
-		height: 390vw;
 	}
 
-	.sw .sw-frame-1 {
-		display: none;
+	.containerr {
+	    width: 70%;
+	    position: absolute;
+	    text-align: center;
+	    margin-top: -17%;
+	    margin-left: 15%;
 	}
 
-	.sw .sw-frame-2 {
-		display: block;
-	}
-
-	.quote {
-		display: none;
-	}
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
