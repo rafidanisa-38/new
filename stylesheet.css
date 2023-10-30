@@ -919,6 +919,56 @@ body {
 		animation: bouncee 1.3s ease-in-out infinite;
 	}
 
+	.sw .sw-content-1 {
+		width: 60%;
+		margin-left: 20%;
+		margin-top: 13.5%;
+	}
+
+	.sw .sw-content-2 {
+		width: 60%;
+		margin-left: 20%;
+		margin-top: 89%;
+	}
+
+	.sw .sw-content-3 {
+		width: 60%;
+		margin-left: 20%;
+		margin-top: 164.5%;
+	}
+
+	.sw .sw-content-4 {
+		width: 60%;
+		margin-left: 20%;
+		margin-top: 237%;
+		height: auto;
+	}
+
+	.sw .sw-content-5 {
+		width: 60%;
+		margin-left: 20%;
+		margin-top: 274%;
+		height: auto;
+	}
+
+	.sw .sw-content-6 {
+		width: 60%;
+		margin-left: 20%;
+		margin-top: 310%;
+	}
+
+	.sw .sw-content-7 {
+		width: 60%;
+		margin-left: 20%;
+		margin-top: 354%;
+	}
+
+	.sw .sw-decoration-2 {
+		width: 25%;
+		margin-top: 404%;
+		margin-left: -0.5%;
+	}
+
 
 }
 
