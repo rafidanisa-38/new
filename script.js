@@ -93,7 +93,7 @@ check.addEventListener('click', () => {
 	qdecor3.style.transform = 'translate(10%, -50%)';
 	qdecor3.style.transform += 'scale(.7)';
 
-	qdecor4.style.transform = 'translate(0%, 75%)';
+	qdecor4.style.transform = 'translate(0%, 95%)';
 	qdecor4.style.transform += 'scale(.6)';
 
 	qdecor5.style.transform = 'translate(30%, 80%)';
