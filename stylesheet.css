@@ -634,6 +634,8 @@ body {
 .quote {
 	position: absolute;
 	margin-top: 196%;
+	height: 39vw;
+	background-color: red;
 }
 
 .quote .quote-bg {
@@ -728,6 +730,8 @@ body {
   	margin-top: -11.6%;
   	height: 31%;
   	align-items: center;
+
+
 }
 
 .quotes {
@@ -765,6 +769,19 @@ body {
 
 #check:checked ~ .containerr {
     display: block;
+    animation: fade_in_show 0.5s;
+}
+
+@keyframes fade_in_show {
+     0% {
+          opacity: 0;
+          transform: scale(0);
+     }
+
+     100% {
+          opacity: 1;
+          transform: scale(1);
+     }
 }
 
 .checkbtn {
@@ -774,7 +791,98 @@ body {
     cursor: pointer;
 }
 
+/*-----------------------------------------------------------------*/
 
+.clients {
+	position: absolute;
+	background: white;
+	margin-top: 236%;
+	width: 100%;
+	height: 49vw;
+}
+
+.clients .clients-decoration-1 {
+	width: 10%;
+	margin-top: 8%;
+	margin-left: 10%;
+}
+
+.clients p {
+	font-family: BricolageGrotesque-Light;
+	font-size: 4.3vw;
+	display: inline-block;
+	position: absolute;
+	margin-top: 10%;
+	text-align: center;
+	width: 60%;
+}
+
+.clients .clients-decoration-2 {
+	width: 10%;
+	margin-top: 8%;
+	margin-left: 10%;
+	transform: scaleY(-1);
+	float: right;
+	margin-right: 10%;
+}
+
+.clients .clients-img {
+	width: 68%;
+	margin-left: 16%;
+	margin-top: 3%;
+}
+
+.clients .clients-img img {
+}
+
+.clients .clients-img-1 {
+	width: 15%;
+	margin-left: 6%;
+	margin-right: 3%;
+	margin-bottom: 3%;
+}
+
+.clients .clients-img-2 {
+	width: 17%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	margin-right: 3%;
+	margin-bottom: 3%;
+}
+
+.clients .clients-img-3 {
+	width: 19%;
+	padding-top: 2.3%;
+	padding-bottom: 2.3%;
+	margin-right: 3%;
+	margin-bottom: 3%;
+}
+
+.clients .clients-img-4 {
+	width: 27%;
+	padding-top: 2.25%;
+	padding-bottom: 2.25%;
+	margin-bottom: 3%;
+}
+
+.clients .clients-img-5 {
+	width: 16%;
+	padding-top: .45%;
+	padding-bottom: .45%;
+	margin-right: 3%;
+	margin-left: 17.5%;
+}
+
+.clients .clients-img-6 {
+	width: 11%;
+	margin-right: 3%;
+}
+
+.clients .clients-img-7 {
+	width: 30%;
+	padding-top: 2.7%;
+	padding-bottom: 2.7%;
+}
 
 /*-----------------------------------------------------------------*/
 
@@ -1001,6 +1109,14 @@ body {
 		margin-top: 527%;
 	}
 
+	.quote .quote-decoration-4 {
+		margin-top: -9%;
+	}
+
+	.clients {
+		margin-top: 567%;
+	}
+
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
@@ -1188,5 +1304,81 @@ body {
 @media (max-width: 770px) {
 	.quote {
 		margin-top: 694%;
+	}
+
+	.clients {
+		margin-top: 734%;
+		height: 130vw;
+	}
+
+	.clients .clients-decoration-1 {
+		margin-top: 14%;
+		margin-left: 7%;
+	}
+
+	.clients p {
+		font-size: 7vw;
+		width: 66.5%;
+		margin-top: 15%;
+	}
+
+	.clients .clients-decoration-2 {
+		margin-top: 14%;
+		margin-right: 7%;
+	}
+
+	.clients .clients-img {
+		width: 68%;
+		margin-left: 16%;
+		margin-top: 4%;
+	}
+
+	.clients .clients-img-1 {
+		width: 40%;
+		margin-left: 6%;
+		margin-right: 5%;
+		margin-bottom: 3%;
+	}
+
+	.clients .clients-img-2 {
+		width: 44%;
+		padding-top: 8.2%;
+		padding-bottom: 8.2%;
+		margin-right: 0%;
+		margin-bottom: 3%;
+	}
+
+	.clients .clients-img-3 {
+		width: 64%;
+		margin-right: 0%;
+		margin-left: 18%;
+		margin-bottom: 3%;
+	}
+
+	.clients .clients-img-4 {
+		width: 64%;
+		margin-left: 18%;
+	}
+
+	.clients .clients-img-5 {
+		width: 42%;
+		padding-top: .45%;
+		padding-bottom: .45%;
+		margin-right: 5%;
+		margin-left: 13%;
+		margin-bottom: 3%;
+	}
+
+	.clients .clients-img-6 {
+		width: 27%;
+		margin-right: 0%;
+		margin-bottom: 3%;
+	}
+
+	.clients .clients-img-7 {
+		width: 70%;
+		padding-top: 2.7%;
+		padding-bottom: 2.7%;
+		margin-left: 15%;
 	}
 }
