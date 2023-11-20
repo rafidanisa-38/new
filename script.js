@@ -84,7 +84,7 @@ check.addEventListener('click', () => {
 	const qbtn = document.getElementById('qbtn');
 	qbtn.style.display = 'none';
 	
-	qdecor1.style.transform = 'translate(-33%, -60%)';
+	qdecor1.style.transform = 'translate(-17%, -60%)';
 	qdecor1.style.transform += 'scale(.6)';
 
 	qdecor2.style.transform = 'translate(-33%, -45%)';
@@ -93,9 +93,9 @@ check.addEventListener('click', () => {
 	qdecor3.style.transform = 'translate(10%, -50%)';
 	qdecor3.style.transform += 'scale(.7)';
 
-	qdecor4.style.transform = 'translate(0%, 95%)';
+	qdecor4.style.transform = 'translate(-20%, -30%)';
 	qdecor4.style.transform += 'scale(.6)';
 
-	qdecor5.style.transform = 'translate(30%, 80%)';
+	qdecor5.style.transform = 'translate(40%, 0%)';
 	qdecor5.style.transform += 'scale(.7)';
 })
